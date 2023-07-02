@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: url("background3.avif")no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+.form-box {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-boxx {
+    position: relative;
+    width: 450px;
+    height: 650px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2 {
+    font-size: 2em;
+    color: white;
+    text-align: center;
+}
+.input-box {
+     position: relative;
+     margin: 30px 0;
+     width: 310px;
+     border-bottom: 2px solid white;
+    transition: .5s;
+
+}
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+} 
+/* ======================== */
+input:focus ~ label,
+input[empty="false"]   ~ label{
+    top: -5px ;
+}
+/* invalid */
+.input-box:has(input[correct="false"] ) {
+    border-bottom: 2px solid rgb(255, 0, 0);
+}
+.input-box:has(input[correct="false"] )  label {
+    color: rgb(255, 0, 0);
+}
+.input-box:has(input[correct="false"] )  ion-icon{
+    color: rgb(255, 0, 0);
+}
+/* valid */
+.input-box:has(input[correct="true"] ) {
+    border-bottom: 2px solid rgb(33, 229, 3);
+}
+.input-box:has(input[correct="true"] )  label {
+    color: rgb(33, 229, 3);
+
+}
+.input-box:has(input[correct="true"] ) ion-icon{
+    color: rgb(33, 229, 3);
+
+}
+/* ======================== */
+
+.input-box input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: white;
+}
+.input-box ion-icon {
+    position: absolute;
+    right: 8px;
+    color: white;
+    font-size: 1.2em;
+    top: 20px;
+    transition: .5s;
+
+
+}
+.forget {
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.forget label input {
+    margin-right: 3px;
+}
+.forget a{
+    margin-left: 3px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+.forget a:hover{
+    text-decoration: underline;
+}  
+button {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+button:hover{
+    opacity: 0.8;
+}
+button:active{
+    opacity: 0.5;
+}
+.register {
+    font-size: .9em;
+    color: white;
+    margin: 25px 0 10px ;
+    text-align: center;
+}
+.register p a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+.register p a:hover{
+    text-decoration: underline;
+}
+.spacing {
+    /* position: relative; */
+    margin: 20px 0;   
+    border-bottom: 0px hidden;
+   
+}
