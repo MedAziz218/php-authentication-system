@@ -18,3 +18,5 @@ To run this application, you need to have the following software installed on yo
 - PHP 
 - MySQL 
 - Web server
+
+![image](https://github.com/MedAziz218/php-authentication-system/assets/118969900/eb7c5c14-82dd-4844-9c25-cc3d68862eb0)
